@@ -1,0 +1,2022 @@
+{
+	"info": {
+		"_postman_id": "9f9cc5bd-8004-41b5-af7b-2a7dc84357cb",
+		"name": "Database Operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MySQL",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/mysql/create_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/create_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"create_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/drop_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/drop_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"drop_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/create_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"int PRIMARY KEY\",\"name\":\"varchar(30)\",\"age\":\"int\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/create_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"create_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/drop_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/drop_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"drop_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/insert_record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"1\",\"name\":\"Ankur\",\"age\":\"29\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/insert_record",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"insert_record"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/insert_multiple_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "['id', \"name\", 'age']",
+									"type": "text"
+								},
+								{
+									"key": "input_file_name",
+									"value": "/Users/ankurtiwari/Work/iNeuron/29.05.2021/jupyter/emp.csv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/insert_multiple_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"insert_multiple_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/update_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "updated_values",
+									"value": "{\"age\":\"12\"}",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\",\"name\":\"Ankur\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/update_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"update_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/retrieve_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/retrieve_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"retrieve_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/retrieve_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/retrieve_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"retrieve_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/delete_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/delete_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"delete_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/delete_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/delete_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"delete_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mysql/truncate_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ankur1234",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mysql/truncate_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mysql",
+								"truncate_table"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MongoDB",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/mongo/create_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/create_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"create_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/drop_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/drop_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"drop_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/create_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"int PRIMARY KEY\",\"name\":\"varchar(30)\",\"age\":\"int\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/create_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"create_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/drop_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/drop_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"drop_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/insert_record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"1\",\"name\":\"Ankur\",\"age\":\"29\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/insert_record",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"insert_record"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/insert_multiple_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "['id', \"name\", 'age']",
+									"type": "text"
+								},
+								{
+									"key": "input_file_name",
+									"value": "/Users/ankurtiwari/Work/iNeuron/29.05.2021/jupyter/emp.csv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/insert_multiple_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"insert_multiple_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/update_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "updated_values",
+									"value": "{\"age\":\"12\"}",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/update_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"update_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/retrieve_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/retrieve_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"retrieve_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/retrieve_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/retrieve_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"retrieve_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/delete_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/delete_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"delete_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/delete_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/delete_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"delete_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/mongo/truncate_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/mongo/truncate_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"mongo",
+								"truncate_table"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cassandra",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/cassandra/create_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/create_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"create_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/drop_schema",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/drop_schema",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"drop_schema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/create_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"varchar PRIMARY KEY\",\"name\":\"varchar\",\"age\":\"varchar\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/create_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"create_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/drop_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/drop_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"drop_table"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/insert_record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "{\"id\":\"1\",\"name\":\"Ankur\",\"age\":\"29\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/insert_record",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"insert_record"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/insert_multiple_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "columns",
+									"value": "['id', \"name\", 'age']",
+									"type": "text"
+								},
+								{
+									"key": "input_file_name",
+									"value": "/Users/ankurtiwari/Work/iNeuron/29.05.2021/jupyter/emp.csv",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/insert_multiple_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"insert_multiple_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/update_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "updated_values",
+									"value": "{\"age\":\"12\"}",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/update_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"update_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/retrieve_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/retrieve_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"retrieve_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/retrieve_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/retrieve_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"retrieve_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/delete_records_with_filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								},
+								{
+									"key": "filters",
+									"value": "{\"id\":\"2\"}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/delete_records_with_filter",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"delete_records_with_filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/delete_records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/delete_records",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"delete_records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/cassandra/truncate_table",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "host",
+									"value": "localhost",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "cassandra",
+									"type": "text"
+								},
+								{
+									"key": "schema_name",
+									"value": "ineuron_02062021",
+									"type": "text"
+								},
+								{
+									"key": "table_name",
+									"value": "employee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/cassandra/truncate_table",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"cassandra",
+								"truncate_table"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
